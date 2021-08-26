@@ -31,9 +31,87 @@
     <ul>
         <li>HTML</li>
         <li>PHP</li>
-        <li></li>
     </ul>
-    Dette er en Uorderert list
+    Dette er en Uorderert list, koden for å lage en uorderert er; <br>
+    <img src="../../../img/Uorderert_liste.png" alt="">
+</p>
+<p>
+    <table>
+    <tr id="Klasseliste">
+        <td>Klasse liste</td>
+    </tr>
+        <tr>
+            <td>Navn</td>
+            <td>Elevnummer</td>
+            <td>Alder</td>
+        </tr>
+        <tr>
+            <td>Sander</td>
+            <td>1</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Linus</td>
+            <td>2</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Sebastian</td>
+            <td>3</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Thomas</td>
+            <td>4</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Marius</td>
+            <td>5</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Tobias</td>
+            <td>6</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Erling</td>
+            <td>7</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Luan</td>
+            <td>8</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Jovan</td>
+            <td>9</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Symon</td>
+            <td>10</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Oscar</td>
+            <td>11</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Steinar</td>
+            <td>12</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Fredrik</td>
+            <td>13</td>
+            <td>17</td>
+        </tr>
+
+    </table>
 </p>
     <p><a href="../">Tilbake</a></p>
     <p><a href="../../">Til forside</a></p>

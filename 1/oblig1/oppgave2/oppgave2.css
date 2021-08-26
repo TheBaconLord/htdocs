@@ -2,3 +2,6 @@
 width: 10%;
 height: 10%;
 }
+table, th, td {
+    border: 1px solid black;
+}
