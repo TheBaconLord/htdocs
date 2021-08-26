@@ -8,6 +8,6 @@
     <h1>Sebastians Webside</h1>
 
   
-    <p><a href="oblig 1/">oblig 1</a></p>
+    <p><a href="oblig1/">oblig 1</a></p>
 </body>
 </html>
