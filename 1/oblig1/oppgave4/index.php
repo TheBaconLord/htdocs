@@ -6,6 +6,10 @@
     <title>Oppgave 4</title>
 </head>
 <body>
-   <h1>Oppgave 1</h1> 
+    <div >
+    <h1>Oppgave 4</h1> 
+    </div>
+   <p><a href="../">Tilbake</a></p>
+    <p><a href="../../">Til forside</a></p>
 </body>
 </html>

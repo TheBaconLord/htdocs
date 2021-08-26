@@ -1,13 +1,17 @@
 
 body {
  background-color: rgb(70, 179, 164);
- 
+ margin: 0;
 }
-
+#header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    
+  }
 h1{
     font-family: Georgia, sans-serif;
     font-size: 40px;
-    text-align: left;
+    text-align: center;
 }
 p{
     font-family: Georgia, Times, serif;

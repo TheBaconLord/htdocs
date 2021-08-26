@@ -5,7 +5,9 @@
     <title>Sebs den</title>
 </head>
 <body>
-    <h1>Sebastians Webside</h1>
+<div id="header">
+  <h1>Sebastians Web</h1>
+</div>
 
   
     <p><a href="oblig1/">oblig 1</a></p>
