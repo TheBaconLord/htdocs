@@ -5,11 +5,15 @@
     <title>Sebs den</title>
 </head>
 <body>
-<div id="header">
+
+<div class="header">
   <h1>Sebastians Web</h1>
 </div>
-
-  
-    <p><a href="oblig1/">oblig 1</a></p>
+<div class="topnav">
+<a href="oblig1/">oblig 1</a>
+</div>
+ <div class="footer">
+   <p id="sebastianhauglid">Sebastian Hauglid</p>
+ </div>
 </body>
 </html>

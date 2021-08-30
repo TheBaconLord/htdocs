@@ -6,7 +6,14 @@
 <title>Oppgave 2</title>
 </head>
 <body>
-    <h1>Oppgave 2</h1>
+<div class="topnav">
+<a href="../../">Til forside</a>
+<a href="../">Tilbake</a>
+
+</div>
+<div class="header">
+  <h1>Oppgave 2</h1>
+</div>
     <h3>hva er komentarer?</h3>
     <p>
         Kommentarer i en HTML fil er notater som mann kan lage for å enklere huske hva en linje med kode gjør.<br>Her er et eksempel på dette;
@@ -113,7 +120,8 @@
 
     </table>
 </p>
-    <p><a href="../">Tilbake</a></p>
-    <p><a href="../../">Til forside</a></p>
+<div class="footer">
+       <p id="sebastianhauglid"> Sebastian Hauglid</p>
+    </div>
 </body>
 </html>

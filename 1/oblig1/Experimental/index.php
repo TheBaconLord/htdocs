@@ -9,14 +9,22 @@
 </style>
 </head>
 <body>
-<div class="topnav">
-  <a href="../../">Forisde</a>
-</div>
+
 <div class="header">
   <h1>Header</h1>
-
+  <div class="topnav">
+  <a href="../">Oblig1</a>
+  <a href="../../">Forisde</a>
 </div>
 
+</div>
+<div class="footer">
+  
+<article>
+  <p>
+
+  </p>
+</article>
 
 
 </body>
