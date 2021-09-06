@@ -14,8 +14,26 @@
  <div class="footer">
    <p id="sebastianhauglid">Sebastian Hauglid</p>
  </div>
- <textarea 
- name="Comentar" id="text" cols="50" rows="15">
- </textarea>
+ <form action="">
+  <input type="text" name="name" required> Navn<br>
+  <input type="text" name="height" required  > Høyde<br>
+  <input type="text" name="weight" required > Din vekt<br>
+  <input type="radio" name="gender" value="female"> Kvinne<br>
+  <input type="radio" name="gender" value="male"> Mann<br>
+  <input type="submit" value="submit">
+</form>
+
+<?php
+  $navn = $_POST["name"];
+  $høyde =$_POST["height"];
+  $vekt =$_POST["weight"];
+  $kjønn =$_POST["gender"];
+
+
+
+?>
+
+
+
 </body>
 </html>

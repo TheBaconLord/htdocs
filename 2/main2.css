@@ -58,4 +58,17 @@ color: #f2f2f2;
     resize: none;
     text-align: center;
 }
-  
+input[type=text]{
+  padding: 12px 14px;
+  margin: 6px 0;
+  border: 100px;
+position: relative;
+box-sizing: border-box;
+}
+input[type=label]{
+  padding: 12px 14px;
+  margin: 6px 0;
+  border: 100px solid;
+position: relative;
+box-sizing: border-box;
+}
