@@ -22,7 +22,9 @@
   <input type="radio" name="gender" value="male"> Mann<br>
   <input type="submit" value="submit">
 </form>
-
+<?php
+if 
+?>
 <?php
   $navn = $_POST["name"];
   $høyde =$_POST["height"];
