@@ -11,6 +11,7 @@
 </div>
 <div class="topnav">
 <a href="oblig1/">oblig 1</a>
+<a href="oblig2/">oblig 2</a>
 </div>
  <div class="footer">
    <p id="sebastianhauglid">Sebastian Hauglid</p>

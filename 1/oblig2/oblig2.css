@@ -11,8 +11,11 @@ h1{
 }
 p{
     font-family: Georgia, Times, serif;
-    font-size: 15px;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-content: center;
 }
 h2{
     font-family: Georgia, Times, serif;
@@ -71,4 +74,22 @@ input[type=label]{
   border: 100px solid;
 position: relative;
 box-sizing: border-box;
+}
+.Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Kvinne{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#mann{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
