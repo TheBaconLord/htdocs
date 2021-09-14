@@ -21,9 +21,13 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    if ($_POST["gender"] == "male"){
+        $male = true;
+    } else {
+        $male = false;
+    }
     $vekt = $_POST["weight"];
     $høyde = $_POST["height"];
-    
     function BMI ($vekt, $høyde){
         $BMI = round($vekt/(($høyde/100)*($høyde/100)), 2);
         return $BMI;
@@ -32,15 +36,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $BMI = BMI($vekt, $høyde);
   
     if ($BMI <= 18.5) {
-        $output = "Under Vektig";
+        $output = ($male) ? "du er Under Vektig": "du er litt tynn kanskje?"; 
     } elseif ($BMI > 18.5 AND $BMI<=24.9 ) {
-        $output = "Normal vekt" ;
+        $output = ($male) ? "du er Normal vekt" : "du er helt perfekt!";
     } elseif ($BMI > 24.9 AND $BMI <=29.9) {
-        $output = "Over vektig" ;
+        $output = ($male) ? "Over vektig" : "Kanksje på tide å trene litt?";
     } elseif ($BMI > 30.0) {
-        $output = "Hva er du? et fjell?, få deg hjelp!";
+        $output = ($male) ? "Hva er du? et fjell?, få deg hjelp!": "Tror at et trenings abenomang kan hjelpe.";
     }  
-echo "<p>Din vekt er ". $BMI . " og du er ";
+echo "<p>Din vekt er ". $BMI . " og  ";
 echo "$output</p>";
 }
 ?> 
