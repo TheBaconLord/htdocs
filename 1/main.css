@@ -74,6 +74,16 @@ h3{
     bottom: 0px;
     width: 100%;
     }
+    #content {
+      padding-bottom: 50px;
+
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+    }
  #sebastianhauglid {
 text-align: center;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
