@@ -69,13 +69,13 @@
                             "Voleyball" => array("fysisk krvenede", "teknisk krevende", "reaksjons respons"),
                             "Løping" => array("Bra for musklene", "Både tungt og lett", "tids fordriv")
                         );
-                        for($row = 0; $row <= 10; $row++){
-                            echo "<p><b>Row number $row </b></p>";
+                        foreach($Hobby as $index => $value){
+                            echo "<p><b> $index </b></p>";
                             echo "<ul>";
-                            for ($col = 0; $col < 3; $col++){
-                                echo "<li>".$Hobby[$row][$col]."</li>";
+                            foreach($value as $index2 => $value2){
+                                echo "<li>$value2</li>";
                             }
-                            echo "</li>";
+                            echo "</ul>";
                         }
                     ?>
                 </li>
