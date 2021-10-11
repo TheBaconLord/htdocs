@@ -17,25 +17,25 @@
         <div  id="content">
             <h2></h2>
                 <ol class= "abc">  
-                <form method="POST" action="index.php" class="Form">
-                Navn: <br><input type="text" name="name"> <br>  
-                Leverings adresse: <br><input type="text" name="adresse"> <br>
-                <input type="radio" name="levering"> 
-                <label for="levering">hentes</label><br>
-                <input type="radio" name="levering"> 
-                <label for="levering">Sendt hjem på døra</label><br>
-                <label for="printAntall">alternativer;</label>
-                    <select name="printAntall" id="printAntall">
-                        <option value="1">Peperoni pizza</option>
-                        <option value="1">Hawaien pizza</option>
-                        <option value="1">Malibu pizza</option>
-                    </select> <br>
+                    <form method="POST" action="pizzaria.php" class="Form">
+                    Navn: <br><input type="text" name="name"> <br>  
+                    Leverings adresse: <br><input type="text" name="adresse"> <br>
+                    <input type="radio" name="levering"> 
+                    <label for="levering">hentes</label><br>
+                    <input type="radio" name="levering"> 
+                    <label for="levering">Sendt hjem på døra</label><br>
+                    <label for="printAntall">alternativer;</label>
+                        <select name="printAntall" id="printAntall">
+                            <option value="1">Peperoni pizza</option>
+                            <option value="1">Hawaien pizza</option>
+                            <option value="1">Malibu pizza</option>
+                        </select> <br>
                     <input type="radio" name="ekstra"> 
-                <label for="ekstra">ekstra ost</label><br>
-                <input type="radio" name="ikke_ekstra"> 
-                <label for="ikke_ekstra">Ikke ekstra ost</label><br>
-                <input type="submit" value="submit">
-            </form>
+                    <label for="ekstra">ekstra ost</label><br>
+                    <input type="radio" name="ikke_ekstra"> 
+                    <label for="ikke_ekstra">Ikke ekstra ost</label><br>
+                    <input type="submit" value="submit">
+                    </form>
                 </ol>
                 
 
