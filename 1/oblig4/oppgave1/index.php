@@ -17,10 +17,17 @@
         <div  id="content">
             <h2>oppgave 1</h2>
                 <ol class= "abc">
-                <form method="POST" action="text.php" class="Form">
+                <form method="POST" action="index.php" class="Form">
                 Name: <br><input type="text" name="name"> <br>  
                 <input type="submit" value="submit">
             </form>
+                <?php
+                        if(isset($_POST["name"])) {
+                            for($i = 0; $i < 5; $i++) {
+                                echo $_POST["name"] . "-";
+                            }
+                        }
+                    ?><br>   
                 </ol>
                 
 
