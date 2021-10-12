@@ -14,6 +14,7 @@
 <a href="oblig2/">oblig 2</a>
 <a href="oblig3/">oblig 3</a>
 <a href="oblig4/">oblig 4</a>
+<a href="oblig5/">oblig 5</a>
 </div>
  <div class="footer">
    <p id="sebastianhauglid">Sebastian Hauglid</p>
