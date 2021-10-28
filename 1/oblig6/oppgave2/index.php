@@ -19,7 +19,7 @@
             <ol class= "abc">
                 <li>
                 <?php
-                    $myfile = fopen("../oppgave1/ord.txt", "r") or die("Unable to open file!");
+                    $myfile = fopen("../oppgave1/ord1.txt", "r") or die("Unable to open file!");
                     $liste = array();
                     
                     $teller = 0;
@@ -29,7 +29,7 @@
                     }
                     fclose($myfile);
                     
-                    echo $liste[rand(0, count($liste)-1)];
+                    echo $liste[rand(0, count($liste)-2)];
 
                     //printe ut valgt arraybox
 

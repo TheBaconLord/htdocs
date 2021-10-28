@@ -17,10 +17,30 @@
     <div  id="content">
         <h2>oppgave 3</h2>
         <ol class= "abc">
+            <form method="POST" action="index.php" class="Form">
+                 Forfatter <input type="text" name="Forfatter" > <br>
+               <br> Sitat <input type="text" name="Sitater" > <br>
+                <br> <input type="submit" name="submit" > <br> <br> <br>
+            </form>
+            <?php
+                if (isset($_POST["Sitater"])){
+                    $myfile = fopen("ord3.txt", "a") or die("Unable to open file!");
+                    fwrite($myfile, $_POST["Forfatter"]);
+                    fwrite($myfile, "\n");
+                    fwrite($myfile, $_POST["Sitater"]);
+                    fwrite($myfile, "\n");
+                    fclose($myfile);
+                }
+                $myfile = fopen("ord3.txt", "r") or die("Unable to open file!");
+                    while (!feof($myfile)){
+                        echo fgets($myfile) . "<br>";
+                    }
+                    fclose($myfile);
+            ?>
         </ol>
     </div>
     <div class="footer">
         <p id="sebastianhauglid">Sebastian Hauglid</p>
     </div>
 </body>
-</html>
+</html>+
