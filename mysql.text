@@ -1,0 +1,25 @@
+For å loge inn på mysql;  mysql --user=root --password=
+
+komandoer for å finne informasjon om databasenen som er der og tabelene i databasene:
+show databases;
+Use <databasenavn>;
+show tables;
+Describe <tabellnavn>;
+Select * from <databasenavn>;
+Select * from <tabellnavn>;
+Select * from <tabellnavn> where <kolonnex> like "%%";
+
+komandoer for å lage databaser og tabeler:
+create database <databasenavn>;
+create table <tabelnavn>(
+-> id int primary key auto_increment,
+-> navn varchar() not null,
+-> <> varchar(),
+-> <> varchar(),
+);
+insert into <tabellnavn>(kolonnex, kolonnex)
+ ->VALUES(kolonne info);
+
+
+
+
