@@ -3,30 +3,27 @@ show databases;
 create database authorsandbooks;
 use authorsandbooks;
 
-CREATE TABLE Bøker
-(
-  id         INT          NOT NULL,
-  title      VARCHAR(250) NULL    ,
-  ISBN       INT          NULL    ,
-  forfaterid INT          NOT NULL,
-  PRIMARY KEY (id)
-);
-
 CREATE TABLE Forfatter
 (
-  id        INT         NOT NULL,
+  id        INT  PRIMARY KEY AUTO_INCREMENT NOT NULL,
   Fornavn   VARCHAR(60) NULL    ,
   Etternavn VARCHAR(60) NULL    ,
-  Email     VARCHAR(60) NULL    ,
-  PRIMARY KEY (id)
+  Email     VARCHAR(60) NULL    
+);
+CREATE TABLE Bøker
+(
+  id         INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  title      VARCHAR(250) NULL    ,
+  ISBN       INT          NULL    ,
+  forfatterid INT          NOT NULL,
+  FOREIGN KEY (forfatterid) references Forfatter(id)
 );
 
-ALTER TABLE Bøker
-  ADD CONSTRAINT FK_Forfatter_TO_Bøker
-    FOREIGN KEY (forfaterid)
-    REFERENCES Forfatter (id);
 
-insert into Forfatter(Fornavn, Etternavn, Email)
-VALUES("", "", "");
-        
+insert into Forfatter (Fornavn,Etternavn, Email) values ("*Anderes","Andersen","anders@andersen.no");
+insert into Forfatter (Fornavn,Etternavn, Email) values ("*Baldor","Balto","balle@ballesen.no");
+insert into Forfatter (Fornavn,Etternavn, Email) values ("*Cedrik","Andersen","anders@andersen.no");
+insert into Forfatter (Fornavn,Etternavn, Email) values ("*Anderes","Andersen","anders@andersen.no");
+
+ insert into bøker (Title,ISBN, forfatterid) values ("hanesen", 347637, 3);        
       

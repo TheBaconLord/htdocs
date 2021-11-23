@@ -145,7 +145,7 @@
           "active": false,
           "left": 123,
           "top": 234,
-          "zIndex": 308,
+          "zIndex": 314,
           "widthName": 60,
           "widthComment": 60,
           "color": "#F80000"
@@ -263,7 +263,15 @@
         "id": "6a0a97e5-c41c-40e8-98fb-4152686d9cb4"
       }
     ],
-    "indexes": []
+    "indexes": [
+      {
+        "name": "",
+        "columns": [],
+        "unique": false,
+        "id": "1848f684-144e-45a5-bfd2-3b8f22471c71",
+        "tableId": "c192bad2-adc9-4bdd-a938-336be6fc4f91"
+      }
+    ]
   },
   "memo": {
     "memos": []
