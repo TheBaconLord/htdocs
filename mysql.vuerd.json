@@ -1,10 +1,10 @@
 {
   "canvas": {
-    "version": "2.2.10",
+    "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -33,
-    "scrollLeft": -3,
+    "scrollTop": -163,
+    "scrollLeft": -4,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -145,7 +145,7 @@
           "active": false,
           "left": 123,
           "top": 234,
-          "zIndex": 314,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60,
           "color": "#F80000"
@@ -251,10 +251,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 120,
           "top": 714,
-          "zIndex": 311,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60,
           "color": "#FF0000"

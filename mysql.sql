@@ -1,6 +1,6 @@
 mysql --user=root --password=
 show databases;
-create database authorsandbooks;
+ create database authorsandbooks;
 use authorsandbooks;
 
 CREATE TABLE Forfatter

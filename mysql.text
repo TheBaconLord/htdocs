@@ -8,6 +8,7 @@ Describe <tabellnavn>;
 Select * from <databasenavn>;
 Select * from <tabellnavn>;
 Select * from <tabellnavn> where <kolonnex> like "%%";
+Select <tabellnavn>/<tabellnavn> as string from <databasenavn>;
 
 komandoer for å lage databaser og tabeler:
 create database <databasenavn>;
