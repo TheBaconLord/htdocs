@@ -30,6 +30,10 @@ void loop(){
         lcd.setCursor(0,2);
         lcd.print ("error");  
     }
+    if  (!twentyFive == true);{
+        lcd.setCursor(0,2);
+        lcd.print("<25%");
+    }
     if  (twentyFive == true);{
         lcd.setCursor(0,2);
         lcd.print("25%");
