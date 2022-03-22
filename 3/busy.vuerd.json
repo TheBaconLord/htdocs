@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -287,
-    "scrollLeft": -456,
-    "zoomLevel": 0.8,
+    "scrollTop": -401,
+    "scrollLeft": -494,
+    "zoomLevel": 0.6,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "Busy prosjekt",
-    "canvasType": "@vuerd/builtin-sql-ddl",
+    "canvasType": "ERD",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -518,8 +518,8 @@
         ],
         "ui": {
           "active": false,
-          "left": 1376.3337,
-          "top": 541.7249,
+          "left": 1419.6674,
+          "top": 541.7254,
           "zIndex": 7,
           "widthName": 60,
           "widthComment": 60
@@ -1008,8 +1008,8 @@
           "columnIds": [
             "bbb2072a-2a72-464c-94eb-da4ba5c8afb7"
           ],
-          "x": 1376.3337,
-          "y": 589.7249,
+          "x": 1419.6674,
+          "y": 589.7254,
           "direction": "left"
         },
         "constraintName": "fk_firma_to_produkter",
@@ -1155,8 +1155,8 @@
           "columnIds": [
             "d4f5b35b-ed8b-4c98-9c16-50f8674fba5c"
           ],
-          "x": 1376.3337,
-          "y": 685.7249,
+          "x": 1419.6674,
+          "y": 685.7254,
           "direction": "left"
         },
         "end": {

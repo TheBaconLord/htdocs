@@ -4,7 +4,7 @@ create table firma(
     orgnummer VARCHAR(9) NOT NULL,
     adresse VARCHAR(120) NOT NULL,
     postnummer INT(11) NOT NULL,
-    leverandor BOOLEAN NULL DEFAULT false,
+    leverandor BOOLEAN NULL DEFAULT false
 ) ;
 
 create table personer(

@@ -17,13 +17,15 @@
   <div class="footer">
     <p id="sebastianhauglid">Sebastian Hauglid</p>
   </div>
-  <form method="POST" action="BMI.php" class="Form">
+  <div>
+    <form method="POST" action="BMI.php" class="Form">
     Navn<input type="text" name="name" required> 
     Høyde <input type="text" name="height" required  > 
     Din vekt <input type="text" name="weight" required > 
     Kvinne <input  type="radio" name="gender" value="female" > 
     Mann  <input type="radio" name="gender" value="male" > 
     <input type="submit" value="submit">
-  </form>
+    </form> 
+  </div>  
 </body>
 </html>
