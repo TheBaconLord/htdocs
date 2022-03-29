@@ -65,6 +65,7 @@ void loop(){
 
         } else if (Twenty && !Fifty) {
             lcd.clear();
+            
             lcd.setCursor(0,2);
             lcd.print("25%");
             delay(100);
