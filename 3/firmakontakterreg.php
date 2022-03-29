@@ -22,7 +22,7 @@
   </div>
   <div>
     <?php 
-      $conection = new mysqli("localhost","my_user","my_password","my_db"); 
+      $conection = new mysqli("localhost","root","","busy"); 
       if ($conection -> connect_errno) {
         echo "Failed to connect to MySQL:" . $conection -> connect_error;
         exit();
@@ -34,6 +34,5 @@
   <div class="footer">
     <p id="sebastianhauglid">Sebastian Hauglid</p>
   </div>
-
 </body>
 </html>

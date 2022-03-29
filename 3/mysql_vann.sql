@@ -9,7 +9,7 @@ create table firma(
 
 create table personer(
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    firma_id INT NOT NULL,
+    firma_id INT,
     navn VARCHAR(60) NOT NULL,
     etternavn VARCHAR(60) NOT NULL,
     title VARCHAR(60) NOT NULL,

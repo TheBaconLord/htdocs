@@ -21,6 +21,8 @@ create table <tabelnavn>(
 insert into <tabellnavn>(kolonnex, kolonnex)
  ->VALUES("kolonne info", "kolonne info");
 
-
+linjer for å fjrne informasjon fra databsesn;
+drop table <tabellnavn>;
+delete from <tabellnavn> where <kolonnex> like / = <kollonenavn>;
 
 
