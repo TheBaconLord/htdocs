@@ -28,7 +28,7 @@
         exit();
       }
 
-      $conection -> query("INSERT INTO firma (navn, orgnummer, adresse, postnummer, leverandor) VALUES ('" . $Firma_id . "', '". $Organisjonsnummer . "', '" . $Adresse . "', '" . $Postnummer . "', '" . $Leverandør . "')")
+      $conection -> query("INSERT INTO firma (navn, orgnummer, adresse, postnummer, leverandor) VALUES ('" . $Firma_id . "', '". $Organisjonsnummer . "', '" . $Adresse . "', '" . $Postnummer . "', '" . $Leverandør . "')");
     ?>
   </div>
   <div class="footer">
