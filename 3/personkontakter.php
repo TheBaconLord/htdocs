@@ -10,6 +10,8 @@
   </div>
   <div class="topnav">
   <a href="./firmakontakter.php">Firmakontakter</a>
+  <a href="./firmasøkmodul.php">Firma søk</a>
+  <a href="./personsøkmodul.php">Person søk</a>
   <a href="./">Forside</a>
   </div>
   <div class="footer">

@@ -1,0 +1,4 @@
+Leverandør  <input  type="checkbox" name="leverandør"> <br>
+$Leverandor = $_POST["leverandør"];
+, leverandør
+'" . $Leverandor . "'

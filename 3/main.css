@@ -12,12 +12,12 @@ h1{
 p{
     font-family: Georgia, Times, serif;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
 }
 h2{
     font-family: Georgia, Times, serif;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
 }
 h3{
     font-family: Georgia, Times, serif;
@@ -115,6 +115,7 @@ box-sizing: border-box;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }  
 * {
   box-sizing: border-box;
