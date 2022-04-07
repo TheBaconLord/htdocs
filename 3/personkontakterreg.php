@@ -6,7 +6,7 @@
     <?php 
       $Tlf = $_POST["tlf"];
       $Epost = $_POST["epost"];
-      $Titel = $_POST["title"];
+      $Title = $_POST["title"];
       $Fornavn = $_POST["navn"];
       $Etternavn = $_POST["etternavn"];
     ?>
@@ -27,7 +27,7 @@
       echo "Failed to connect to MySQL:" . $connection -> connect_error;
       exit();
     }
-    $connection -> query("INSERT INTO personer (navn, etternavn, title, epost, tlf) VALUES ('" . $Fornavn . "', '". $Etternavn . "', '" . $Titel . "', '" . $Epost . "', '" . $Tlf . "')");
+    $connection -> query("INSERT INTO personer (navn, etternavn, title, epost, tlf) VALUES ('" . $Fornavn . "', '". $Etternavn . "', '" . $Title . "', '" . $Epost . "', '" . $Tlf . "')");
   ?>
   <div class = Form>
     <p><br>Takk for at du har meldt deg inn som medlem i Sebastian's den. </p> 

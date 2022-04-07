@@ -20,11 +20,11 @@
   </div>
   <div>
     <form method="POST" action="./firmasøkmodulreg.php" class="Form"> <br>
-    Firma Navn <input type="text" name="firmanavn" required  > <br>
-    Adresse <input type="text" name="adresse" required > <br>
-    Postnummer <input type="text" name="postnummer" required > <br>
-    Tlf <input type="text" name="tlf" required> <br>
-    Organisasjonsnummer <input type="text" name="orgnummer" required > <br>
+    Firma Navn <input type="text" name="firmanavn"> <br>
+    Adresse <input type="text" name="adresse" > <br>
+    Postnummer <input type="text" name="postnummer"> <br>
+    Tlf <input type="text" name="tlf"> <br>
+    Organisasjonsnummer <input type="text" name="orgnummer"> <br>
       <input type="submit" value="submit">
     </form>
   </div>

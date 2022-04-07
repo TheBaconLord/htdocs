@@ -21,6 +21,7 @@
     <form method="POST" action="./personsøkmodulreg.php" class="Form"> <br>
     Fornavn <input type="text" name="navn"> <br>
     Etternavn <input type="text" name="etternavn"> <br>
+    Title <input type="text" name="title"> <br>
     Epost <input type="text" name="epost"> <br>
     Tlf <input type="text" name="tlf"> <br>
       <input type="submit" value="submit">

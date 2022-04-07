@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "Busy prosjekt",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-sql-ddl",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",

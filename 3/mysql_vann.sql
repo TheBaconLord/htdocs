@@ -3,9 +3,9 @@ create table firma(
     navn VARCHAR(120) NOT NULL,
     orgnummer VARCHAR(9) NOT NULL,
     adresse VARCHAR(120) NOT NULL,
-    postnummer INT(11) NOT NULL,
-    leverandor BOOLEAN NULL DEFAULT false
-) ;
+    tlf VARCHAR(25) NOT NULL,
+    postnummer INT(11) NOT NULL  
+);
 
 create table personer(
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
