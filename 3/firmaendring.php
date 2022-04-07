@@ -6,14 +6,16 @@
 </head>
 <body>
   <div class="header">
-    <h1>Firmakontakter</h1>
+    <h1>Firma endring</h1>
   </div>
   <div class="topnav">
+    <a href="./firmakontakter.php">Firmakontakter</a>
     <a href="./firmasøkmodul.php">Firma søk</a>
     <a href="./firmasletting.php">Firma sletting</a>
     <a href="./personkontakter.php">Personkontakter</a> 
     <a href="./personsøkmodul.php">Person søk</a>
     <a href="./personsletting.php">Person sletting</a>
+    
     <a href="./">Forside</a>
   </div>
 

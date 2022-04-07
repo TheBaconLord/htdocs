@@ -13,9 +13,10 @@
 </head>
 <body>
   <div class="header">
-    <h1>Firmakontakter</h1>
+    <h1>Firma endring</h1>
   </div>
   <div class="topnav">
+    <a href="./firmakontakter.php">Firmakontakter</a>
     <a href="./firmasøkmodul.php">Firma søk</a>
     <a href="./firmasletting.php">Firma sletting</a>
     <a href="./personkontakter.php">Personkontakter</a> 
@@ -29,7 +30,6 @@
       echo "Failed to connect to MySQL:" . $conection -> connect_error;
       exit();
     }
-    $conection -> query("INSERT INTO firma (navn, orgnummer, adresse, postnummer, tlf) VALUES ('" . $Navn . "', '". $Organisjonsnummer . "', '" . $Adresse . "', '" . $Postnummer . "', '" . $Tlf . "')");
   ?>
   <div class = Form> 
     <p>Takk for at du har meldt deg inn som medlem i Sebastian's den. 

@@ -4,27 +4,25 @@
   <link rel="stylesheet" href="main.css">
     <title>Busy prosjekt</title>
     <?php 
-      $Tlf = $_POST["tlf"];
-      $Postnr = $_POST["postnummer"];
-      $Firmanavn = $_POST["firmanavn"];
-      $Orgnummer = $_POST["orgnummer"];
-      $Adresse = $_POST["adresse"];
+      $Fornavn = $_POST["navn"];
+      $Etternavn = $_POST["etternavn"];
+      $Epost = $_POST["epost"];
     ?>
 </head>
 <body>
   <div class="header">
-    <h1>firma søk</h1>
+    <h1>Perosn sletting</h1>
   </div>
   <div class="topnav">
     <a href="./firmakontakter.php">Firmakontakter</a>
-    <a href="./firmasletting.php">Firma søk</a>
+    <a href="./firmasøkmodul.php">Firma søk</a>
+    <a href="./firmasletting.php">Firma sletting</a>
     <a href="./personkontakter.php">Personkontakter</a>
     <a href="./personsøkmodul.php">Person søk</a>
-    <a href="./personsletting.php">Person sletting</a>
     <a href="./">Forside</a>
   </div>
   <div class = Form>
-    <p><br>Her er resultatene fra ditt søk  </p> 
+    <p><br></p> 
   </div>
   <?php 
     $connection = new mysqli("localhost","root","","busy");
@@ -32,15 +30,12 @@
       echo "Failed to connect to MySQL:" . $connection -> connect_error;
       exit();
     }
-    $sql = "SELECT * FROM firma WHERE navn like '%$Firmanavn%' and postnummer like '%$Postnr%' and orgnummer like '%$Orgnummer%' and adresse like '%$Adresse%'";
-    $result = mysqli_query($connection, $sql);
+    $DEL = " DELETE FROM personer WHERE navn = '$Fornavn' and etternavn = '$Etternavn' and epost = '$Epost'";
 
-    if (mysqli_num_rows($result) > 0){
-      while($row = mysqli_fetch_assoc($result)) {
-        echo "  " . $row["navn"]. "<br>";
-      }
+    if ($connection->query($DEL) == TRUE) {
+        echo "<p> Person er nå blit slettet </p>";
     } else {
-      echo "0 results";
+        echo "<p> Error, vi klarte ikke å slette firmaet ditt </p>" . $connection->error;
     }
   ?>
   

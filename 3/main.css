@@ -45,6 +45,8 @@ h3{
   
   /* Style the top navigation bar */
   .topnav {
+    display: flex;
+    gap: 28px;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -119,4 +121,13 @@ box-sizing: border-box;
 }  
 * {
   box-sizing: border-box;
+}
+.space{
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 6px 10px;
 }

@@ -16,13 +16,15 @@
     <h1>Person søk</h1>
   </div>
   <div class="topnav">
-    <a href="./firmakontakter.php">Firmakontakter</a>
-    <a href="./personkontakter.php">Personkontakter</a>
+    <a href="./firmakontakter.php">Firmakontakter</a> 
     <a href="./firmasøkmodul.php">Firma søk</a>
+    <a href="./firmasletting.php">Firma sletting</a>
+    <a href="./personkontakter.php">Personkontakter</a>
+    <a href="./personsletting.php">Person sletting</a>
     <a href="./">Forside</a>
   </div>
   <div class = Form>
-    <p><br>Her er søke resultatenen </p> 
+    <p><br>Her er resultatet fra ditt søk </p> 
   </div>
   <?php 
     $connection = new mysqli("localhost","root","","busy");
@@ -30,7 +32,7 @@
       echo "Failed to connect to MySQL:" . $connection -> connect_error;
       exit();
     }
-    $sql = "SELECT * FROM personer WHERE navn = '$Fornavn' or etternavn ='$Etternavn' or title = '$Title' or epost = '$Epost' or tlf = '$Tlf'";
+    $sql = "SELECT * FROM personer WHERE navn like '%$Fornavn%' and etternavn like '%$Etternavn%' and title like '%$Title%' and epost like '%$Epost%' and tlf like '%$Tlf%'";
     $result = mysqli_query($connection, $sql);
 
     if (mysqli_num_rows($result) > 0){
