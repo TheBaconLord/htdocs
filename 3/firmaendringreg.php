@@ -30,6 +30,14 @@
       echo "Failed to connect to MySQL:" . $conection -> connect_error;
       exit();
     }
+    $sql = "UPDATE firma SET  ";
+
+    if ($conection->query($sql) == TRUE){
+      echo"Oppdatering av firma har blit registrert";
+    } else {
+      echo"Error, klarte ikke å oppdatere ditt firma." . $conection->error;
+    }
+    $conection->close();
   ?>
   <div class = Form> 
     <p>Takk for at du har meldt deg inn som medlem i Sebastian's den. 
