@@ -30,7 +30,7 @@
       echo "Failed to connect to MySQL:" . $conection -> connect_error;
       exit();
     }
-    $sql = "UPDATE firma SET  ";
+    $sql = "UPDATE firma SET navn = '".  $Navn . "','".  $Adresse . "','".  $Postnummer . "','".  $Tlf . "'";
 
     if ($conection->query($sql) == TRUE){
       echo"Oppdatering av firma har blit registrert";

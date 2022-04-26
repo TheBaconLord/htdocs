@@ -23,7 +23,7 @@
     <p id="sebastianhauglid">Sebastian Hauglid</p>
   </div>
   <div>
-    <form method="POST" action="./firmakontakterreg.php" class="Form"> <br>
+    <form method="POST" action="./firmaendringreg.php" class="Form"> <br>
     Firma Navn <input type="text" name="navn" required  > <br>
     Adresse <input type="text" name="adresse" required > <br>
     Postnummer <input type="text" name="postnummer" required > <br>

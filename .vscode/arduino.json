@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrispmkii",
+    "sketch": "arduino_vannføler\\Skjerm\\Skjerm.ino"
+}

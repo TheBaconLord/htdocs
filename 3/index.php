@@ -11,6 +11,7 @@
     <div class="topnav">
         <a href="./firmakontakter.php">Firmakontakter</a>
         <a href="./firmasøkmodul.php">Firma søk</a>
+        <a href="./firmaendring.php">Firma endring</a>
         <a href="./firmasletting.php">Firma sletting</a>
         <a href="./personkontakter.php">Personkontakter</a>      
         <a href="./personsøkmodul.php">Person søk</a>      

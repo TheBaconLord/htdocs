@@ -10,6 +10,7 @@
   </div>
   <div class="topnav">
     <a href="./firmakontakter.php">Firmakontakter</a>
+    <a href="./firmaendring.php">Firma endring</a>
     <a href="./firmasletting.php">Firma sletting</a>
     <a href="./personkontakter.php">Personkontakter</a>
     <a href="./personsøkmodul.php">Person søk</a>
@@ -23,10 +24,6 @@
   <div>
     <form method="POST" action="./firmasøkmodulreg.php" class="Form"> <br>
     Firma Navn <input type="text" name="firmanavn"> <br>
-    Adresse <input type="text" name="adresse" > <br>
-    Postnummer <input type="text" name="postnummer"> <br>
-    Tlf <input type="text" name="tlf"> <br>
-    Organisasjonsnummer <input type="text" name="orgnummer"> <br>
       <input type="submit" value="submit">
     </form>
   </div>
