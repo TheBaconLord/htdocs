@@ -17,7 +17,7 @@ const int motor = 3;
 unsigned long sisteEndring = 0;
 bool Status[4]= {false,false, false, false}; 
 
-// dette er for å deffinere hva som er innputs/ outputs fra vannføleren, lcd skjermen og pumpen/motoren
+// dette er for å deffinere hva som er innputs/ outputs fra vannføleren, OLED skjermen og pumpen/motoren
 void setup() {
     Serial.begin(9600);
     display.begin(SSD1306_SWITCHCAPVCC, 0x3D);
@@ -39,16 +39,16 @@ void loop(){
     bool Fifty = digitalRead(fifty);
     bool Twenty = digitalRead(twentyFive);
     bool Motor = digitalRead(motor);
-
+// Dette er en startup sekvens for OLED skjermen
     display.clearDisplay();
     display.setTextColor(WHITE);
     display.setTextSize(1);
-
+// Dette er kodedelen som ser etter feil med sensorene 
     if  ((!Twenty && (Fifty || Seventy || Hundred)) || (!Fifty && (Seventy || Hundred)) || (!Seventy && Hundred)) {
         display.setCursor(50,30);
         display.print("error");
         delay(500);
-    } else {
+    } else { // Dette er kodelinjen som reiner ut om motoren/pumpen skal gå i forhold til hva som var forige input på sensorene
         if (!Motor &&((!Twenty && Status[0] != Twenty) || (!Fifty && Status[1] != Fifty) || (!Seventy && Status[2] != Seventy) || (!Hundred && Status[3] != Hundred))){
             Serial.println(sisteEndring > millis());
             if(sisteEndring > millis()){
@@ -66,7 +66,7 @@ void loop(){
         Status[1] = Fifty;
         Status[2] = Seventy;
         Status[3] = Hundred; 
-            
+        //Dette er kodelinjen som bestemer hva som skal printes ut på OLED skjermen når sensoren for under 25% vannhøyde er aktiv.    
         if (!Twenty) {
             display.setCursor(0,15);
             display.print("<25%");
@@ -74,18 +74,18 @@ void loop(){
           	display.setCursor(30,0);
             display.print(" Pump on");
             
-
+        // Dette er kodelinjen bestemer hva som skal printes ut på OLED skjermen når sensoren for 25% vannhøyde er aktiv og når 50% vannhøyde er aktiv.
         } else if (Twenty && !Fifty) {            
             display.setCursor(0,15);
             display.print("25%");
         } else if (Twenty && Fifty && !Seventy) {
             display.setCursor(0,15);
             display.print("50%");
- 
+        //Dette er kodelinjen som bestemer hva som skal printes ut på OLED skjermen når sensoren for 75% vannhøyde er aktiv.
         } else if (Twenty && Fifty && Seventy && !Hundred) {
             display.setCursor(0,15);
             display.print("75%");
-
+        //Dette er kodelinjen som bestemer hva som skal printes ut på OLED skjermen når sensoren for 100% vannhøyde er aktiv.
         } else if (Twenty && Fifty && Seventy && Hundred) {
             display.setCursor(0,15);
             display.print("100%");
@@ -93,6 +93,7 @@ void loop(){
             display.print(" pump off");
             digitalWrite(motor, LOW);
         }
+        //Dette er kodelinjen som lager loading baren for hvor fullt et vannmagasin er.
      display.drawRect(0, 40, SCREEN_WIDTH, SCREEN_HEIGHT - 40, WHITE);
      display.fillRect(0, 40, SCREEN_WIDTH * (
          Hundred ? 1: 
