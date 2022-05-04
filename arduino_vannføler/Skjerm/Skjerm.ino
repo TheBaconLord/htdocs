@@ -61,7 +61,7 @@ void loop(){
             
             sisteEndring = millis() + 2000;
         }
-        
+        //Definerer hvilke verdier det forskjelige sensorene er.
         Status[0] = Twenty;
         Status[1] = Fifty;
         Status[2] = Seventy;

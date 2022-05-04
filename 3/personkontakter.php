@@ -27,7 +27,25 @@
     Title <input type="text" name="title" required> <br>
     Epost <input type="text" name="epost" required> <br>
     Tlf <input type="text" name="tlf" required> <br>
-    Firma <input type="text" name="firma_id" required> <br>
+    Firma <select name="firmaid "><br>
+      <br><option value="0">Velg firma</option>
+      <?php
+        $connection = new mysqli("localhost","root","","busy");
+        if ($connection -> connect_errno) {
+          echo "Failed to connect to MySQL:" . $connection -> connect_error;
+          exit();
+        }
+
+        $res = $connection->query("SELECT id, navn FROM `firma`");
+
+        if($res->num_rows > 0) {
+          while($row = $res->fetch_assoc()) {
+            echo "<option value='" . $row["id"] . "'" . $row["navn"] . "</option>";
+          }
+        }
+      ?>
+    </select>
+    <!-- Firma <input type="dropdown" name="firmaid" required> <br> -->
       <input type="submit" value="submit">
     </form>
   </div>

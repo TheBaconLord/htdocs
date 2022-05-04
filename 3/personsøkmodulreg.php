@@ -4,12 +4,8 @@
   <link rel="stylesheet" href="main.css">
     <title>Busy prosjekt</title>
     <?php 
-      $Tlf = $_POST["tlf"];
-      $Epost = $_POST["epost"];
-      $Title = $_POST["title"];
       $Fornavn = $_POST["navn"];
       $Etternavn = $_POST["etternavn"];
-      $Firma_id = $_POST["firma_id"];
     ?>
 </head>
 <body>
@@ -34,12 +30,12 @@
       echo "Failed to connect to MySQL:" . $connection -> connect_error;
       exit();
     }
-    $sql = "SELECT * FROM personer WHERE navn like '%$Fornavn%' and etternavn like '%$Etternavn%' and title like '%$Title%' and epost like '%$Epost%' and tlf like '%$Tlf%' and firma_id like '%$Firma_id%'";
+    $sql = "SELECT personer.*, firma.navn as 'FirmaNavn' FROM personer, firma WHERE personer.navn like '%$Fornavn%' and personer.etternavn like '%$Etternavn%' and firma.id = personer.firma_id";
     $result = mysqli_query($connection, $sql);
 
     if (mysqli_num_rows($result) > 0){
       while($row = mysqli_fetch_assoc($result)) {
-        echo "  " . $row["navn"]. "  " . $row["etternavn"]. "  " . $row["firma_id"] . "<br>";
+        echo "  " . $row["navn"]. "  " . $row["etternavn"]. "    " . $row["FirmaNavn"] . "<br>";
       }
     } else {
       echo "0 results";
