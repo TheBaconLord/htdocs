@@ -40,12 +40,11 @@
 
         if($res->num_rows > 0) {
           while($row = $res->fetch_assoc()) {
-            echo "<option value='" . $row["id"] . "'" . $row["navn"] . "</option>";
+            echo "<option value='" . $row["id"] . "'>" . $row["navn"] . "</option>";
           }
         }
       ?>
     </select>
-    <!-- Firma <input type="dropdown" name="firmaid" required> <br> -->
       <input type="submit" value="submit">
     </form>
   </div>
