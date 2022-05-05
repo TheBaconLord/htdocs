@@ -27,8 +27,8 @@
     Title <input type="text" name="title" required> <br>
     Epost <input type="text" name="epost" required> <br>
     Tlf <input type="text" name="tlf" required> <br>
-    Firma <select name="firmaid "><br>
-      <br><option value="0">Velg firma</option>
+    Firma <select name="firmaid">
+      <option value="0">Velg firma</option>
       <?php
         $connection = new mysqli("localhost","root","","busy");
         if ($connection -> connect_errno) {

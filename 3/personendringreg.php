@@ -30,6 +30,7 @@
       echo "Failed to connect to MySQL:" . $connection -> connect_error;
       exit();
     }
+    $sql = "UPDATE Personer SET navn= $Fornavn WHERE id= "
   ?>
   <div class = Form>
     <p><br>Takk for at du har meldt deg inn som medlem i Sebastian's den. </p> 
