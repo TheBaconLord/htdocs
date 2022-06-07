@@ -31,8 +31,6 @@
       echo "Failed to connect to MySQL:" . $connection -> connect_error;
       exit();
     }
-
-    echo "INSERT INTO personer (navn, etternavn, title, epost, tlf, firma_id) VALUES ('$Fornavn', '$Etternavn', '$Title', '$Epost', $Tlf, $Firmaid)";
     $connection -> query("INSERT INTO personer (navn, etternavn, title, epost, tlf, firma_id) VALUES ('$Fornavn', '$Etternavn', '$Title', '$Epost', $Tlf, $Firmaid)");
   ?>
   <div class = Form>
